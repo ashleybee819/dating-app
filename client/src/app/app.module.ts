@@ -14,6 +14,7 @@ import { MemberListComponent } from './_components/member-list/member-list.compo
 import { MemberDetailComponent } from './_components/member-detail/member-detail.component';
 import { ListsComponent } from './_components/lists/lists.component';
 import { MessagesComponent } from './_components/messages/messages.component';
+import { ToastrModule } from 'ngx-toastr';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -42,7 +43,10 @@ const routes: Routes = [
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule, 
-    BsDropdownModule.forRoot()
+    BsDropdownModule.forRoot(),
+    ToastrModule.forRoot({
+      positionClass: 'toast-bottom-right'
+    })
   ],
   exports: [
     RouterModule
