@@ -42,7 +42,7 @@ const routes: Routes = [
     AppRoutingModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    FormsModule, 
+    FormsModule,
     BsDropdownModule.forRoot(),
     ToastrModule.forRoot({
       positionClass: 'toast-bottom-right'
